@@ -1,0 +1,57 @@
+
+			width:100%;
+			height:378px;
+			display:block;
+			border:none;
+			position:relative;
+/* ------------------------------ Dumb Crossfader -------------------------------*/		
+
+		#slider {
+			position:relative;
+		}
+		.crossfade {
+			overflow: hidden;
+			float: left;		
+			height: 400px;
+			background: #aaa;
+		}
+			.crossfade .item {
+				display: none;
+				position: absolute;
+				top: 0;
+				left: 0;
+				border: none;
+				width: 100%;
+				padding: 10px;
+				background:#007CA5;
+				color:#fff;
+				height:400px;
+			}
+
+			.crossfade * {border:none;text-decoration:none;}
+			
+			a.next, a.prev {
+				display: block;
+				position: absolute;
+				top: 200px;
+				z-index: 1000;
+			}
+			
+				a.prev {left: -1em;}
+				a.next{right: -1em;}
+			
+				.slide-nav {
+					text-align: center;
+					width: 100%;
+					margin-top:2em;
+				}
+				.slide-nav li {display:inline-block;margin-left:1em;}
+					.slide-nav li a {
+						background: #ccc;
+						text-indent: -9999px;
+						height: 1em;
+						width: 1em;
+						border-radius: 1em;
+						display: block;
+					}
+					.slide-nav li a.selected {background: #999}
